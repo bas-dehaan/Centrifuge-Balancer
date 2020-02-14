@@ -1,9 +1,7 @@
 # Centrifuge-Balancer
-This tool provide easy calculations on stabilizing a microtube centrifuge
-
-** This script does not work (yet) **
+This tool provide easy calculations on stabilizing an Eppendorf Mini Spin centrifuge
 
 # To-Do
-* Make this program work
 * ~Add a GUI input~
 * Add a GUI output
+* Code clean-up
