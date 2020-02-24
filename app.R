@@ -23,10 +23,13 @@ ui = fluidPage(
                         value = 6)
         ),
 
-        # Show a plot of the generated distribution
+        #Output
         mainPanel(
+            #Show the selected number of tubes
             textOutput("tube_number"),
+            #Show the recomended centrifuge holes
             textOutput("stable_number"),
+            #Show the image of a stable centrifuge configuration
             imageOutput("stable_img")
         )
     )
@@ -76,7 +79,7 @@ server = function(input, output) {
         # Return a list containing the filename and alt text
         list(src = image_file_path,
              alt = paste("Graphical view of Centrifuge", input$tubes))
-        
+    # Don't delete the file after use
     }, deleteFile = FALSE)
 }
 
