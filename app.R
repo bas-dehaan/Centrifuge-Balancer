@@ -6,14 +6,14 @@
 library(shiny)
 
 
-# Define UI for application that draws a histograms
+# Define UI for the application 
 ui = fluidPage(
 
     # Application title
     titlePanel("Centrifuge Balancer"),
     helpText("Based on an Eppendorf Mini Spin centrifuge"),
 
-    # Sidebar with a slider input for number of bins 
+    # Sidebar with a slider input for number of tubes 
     sidebarLayout(
         sidebarPanel(
             sliderInput("tubes",
